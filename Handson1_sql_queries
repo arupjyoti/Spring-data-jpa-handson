@@ -1,0 +1,29 @@
+drop database if exists ormlearn;
+create database ormlearn;
+use ormlearn;
+
+CREATE TABLE IF NOT EXISTS country (
+  co_code varchar(2) primary key,
+  co_name varchar(50)
+);
+
+INSERT INTO country (co_code, co_name) VALUES
+('AD', 'Andorra'),
+('AF', 'Afghanistan'),
+('AG', 'Antigua and Barbuda'),
+('AI', 'Anguilla'),
+('AL', 'Albania'),
+('AM', 'Armenia'),
+('AO', 'Angola'),
+('AQ', 'Antarctica'),
+('AR', 'Argentina'),
+('AS', 'American Samoa'),
+('AT', 'Austria'),
+('AU', 'Australia'),
+('AW', 'Aruba'),
+('AZ', 'Azerbaijan'),
+('BB', 'Barbados'),
+('BD', 'Bangladesh'),
+('BH', 'Bahrain'),
+('BS', 'Bahamas'),
+('KA', 'Bangalore');
